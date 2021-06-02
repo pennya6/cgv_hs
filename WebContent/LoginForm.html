@@ -1,0 +1,60 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CGV_HS</title>
+	<script>
+ function enrolIdPassword() {
+	 window.top.location='enrolIdPassword/systemEnrolIdPassword.html'; 
+ }
+</script>
+	<style>
+      body{text-align:center;}
+      header{width:99%; height:150px; text-align:center;}
+      #goMain{text-decoration:none;color:rgb(155, 89, 182); font-size:35pt;}
+      div{text-align:center;}
+      div div{float:right; text-align:left;}
+      
+      nav{width:850px; height:40px; margin:0 auto;}
+      nav ul li{list-style:none; color:black; background:rgb(222, 196, 246); float:left; line-height:40px; vertical-align:middle; text-align:center;}
+      nav ul li a{text-decoration:none; color:black; font-weight:bold; display:block; width:250px; font-size:13px;}
+      nav ul li a:hover{background:rgb(231, 220, 231);}
+      
+      #showContent{float:center; text-align:center; margin-left:80px; margin-right:80px;}
+      #show{width:100%; text-align:left; float:left; display:block;}
+      a {text-decoration:none;}
+      table{border:1px solid rgb(212, 205, 214); border-collapse:collapse; width:100%; height:70px; text-align:center;}
+      thead{background:rgb(241, 240, 240);}
+      td,th{border:1px solid rgb(212, 205, 214);}
+   </style>
+
+</head>
+<body>
+	<header>
+		<div><a id="goMain" href="LoginAction.jsp"><h1>CGV_HS</a></h1>
+		 <form action="LoginAction.jsp" method="post">
+		 ID : <input type="text" name="id" size=20> <br>
+	     FW : <input type="password" name="pw" size=20>
+			<input type="submit" value=" 로그인 "> <br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small><a href="JoinPage.html">아이디가 없으신가요?</a></small>
+		</div>
+	</header>
+	<nav>
+		<div><ul>
+		
+			<li><a href="MovieChoice.jsp" >영화 예매</a></li>
+			<li><a href="FastOrder.jsp">패스트 오더</a></li>
+			<li><a href="MyPage.jsp">마이 페이지</a></li>
+		</ul></div>
+	</nav> 
+	
+	<section>
+	<div id="showContent">
+
+	</div>
+	</section>
+	
+</body>
+</html>

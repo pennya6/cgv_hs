@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CGV_HS</title>
+	<script>
+ function enrolIdPassword() {
+	 window.top.location='enrolIdPassword/systemEnrolIdPassword.html'; 
+ }
+</script>
+	<style>
+		body{text-align:center;}
+		header{width:99%; height:150px; text-align:center;}
+		#goMain{text-decoration:none;color:rgb(155, 89, 182); font-size:35pt; }
+		div{text-align:center;}
+		div div{float:right; text-align:left;}
+		
+		nav{width:850px; height:40px; margin:0 auto;}
+		nav ul li{list-style:none; color:black; background:rgb(222, 196, 246); float:left; line-height:40px; vertical-align:middle; text-align:center;}
+		nav ul li a{text-decoration:none; color:black; font-weight:bold; display:block; width:250px; font-size:13px;}
+		nav ul li a:hover{background:rgb(231, 220, 231);}
+		
+		#showContent{text-align:left;  margin-left:80px;margin-right:80px;}
+		#show{width:100%; text-align:left; float:left; display:block;}
+		p{width:1000px; padding:10px; margin-bottom:30px; float:left;}
+		#join {background:rgb(241, 240, 240);width:1000px; text-align:center; margin:0 auto;}
+	</style>
+</head>
+<body>
+	<header>
+		<div><a id="goMain" href="LoginForm.html"><h1>CGV_HS</a></h1>
+		<div><form action="LoginAction.jsp" method=post>
+		 ID : <input type="text" name="id" size=20> <br>
+	     FW : <input type="password" name="fw" size=20>
+			<input type="submit" value=" 로그인 "> <br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small><a href="JoinPage.html">아이디가 없으신가요?</a></small>
+		</form></div>
+		</div>
+	</header>
+
+	
+	<nav>
+		<div><ul>
+			<li><a href="MovieChoice.jsp" >영화 예매</a></li>
+			<li><a href="FastOrder.jsp">패스트 오더</a></li>
+			<li><a href="MyPage.jsp">마이 페이지</a></li>
+		</ul></div>
+	</nav>
+	
+	<section>
+	<div id="showContent">
+		  <h4 id="show">회원가입  &gt;</h4>
+		 <form id="join" action="JoinAction.jsp" method=post>
+		 <br><b>회원가입을 위해 개인 정보를 입력해주세요</b><br><br>
+		 memberno : <input type="text" name="memberno" size=30 placeholder="회원번호를 입력해주세요"> <br> 
+		    이름 : <input type="name" name="name" size=30 placeholder="이름을 입력해주세요"> <br> 
+	        아이디 : <input type="text" name="id" size=30 placeholder="아이디를 입력해주세요"> <br> 
+		    비밀번호 : <input type="password" name="pw" size=30 placeholder="비밀번호를 입력해주세요"> <br> 
+		    전화번호 : <input type="text" name="number" size=30 placeholder="전화번호를 입력해주세요"> <br> 
+		    생년월일 : <input type="date" name="birth" size=30> <br><br>
+			<input type="submit" value="회원가입">
+			<input type="reset"  value="초기화"> <br><br>
+		</form>
+	</div>
+	</section>
+</body>
+</html>
